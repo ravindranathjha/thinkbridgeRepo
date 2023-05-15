@@ -14,6 +14,7 @@ else:
 class Sorting: 
     # Insertion Sort
     def insertionSort(self, array):
+        jo = 3
         for i in range (1, len(array)):
             key = array[i]
             j = i-1
