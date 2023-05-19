@@ -1,0 +1,120 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.heading_container h5{
+    font-style: italic;
+    color: gray;
+}
+.heading_container{
+    padding: 2%;
+}
+.heading_container h1{
+    font-size:100px;
+}
+/* button */
+.heading_container button{
+    width: 14rem;
+    height: 3rem;
+    background-color: transparent;
+    border: 2px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.heading_container button:hover{
+    width: 14rem;
+    height: 3rem;
+    background-color:blanchedalmond;
+    border: 2px black solid;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* middle container */
+.middle_container{
+    background-color: rgb(204, 190, 190);
+    
+}
+.middle_container .cards .card span{
+    color: brown;
+    font-size: 48px;
+    
+}
+.middle_container .cards .card h3{
+    color: #a52a2a;
+    font-weight: lighter;
+    
+}
+.middle_container .cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 5%;
+    margin: 2%;
+    text-align:center;
+
+}
+.middle_container .cards .card{
+    width: fit-content;
+    height: fit-content;
+    
+    padding: 2%;
+}
+
+hr{
+    border: 1px solid #8c4141;
+    width: 50%;
+}
+
+/* footer */
+.footer_container{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 24rem;
+    
+    display: grid;
+    justify-content: center;
+    background-color: rgb(75, 74, 74);
+}
+.footer_container span{
+    color: whitesmoke;
+    font-size: 48px;
+    
+}
+.footer_container .icon{
+    padding: 3%;
+}
+.info {
+    display: grid;
+    list-style-type: none;
+    padding-left: 0;
+    text-align: left;
+    border-left: 2px solid whitesmoke;
+    padding: 0;
+    align-items: center;
+    color: whitesmoke;
+    padding: 15%;
+    height: 40%;
+  }
+
+  .info p {
+    margin: 0;
+    padding: 5px;
+  }
+
+/* media query */
+
+@media (max-width:700px){
+    .middle_container{
+        background-color: rgb(189, 163, 163);
+        min-width: 100%;
+    }
+    .middle_container .cards{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        text-align: center;
+        padding: 5%;
+    }
+}
