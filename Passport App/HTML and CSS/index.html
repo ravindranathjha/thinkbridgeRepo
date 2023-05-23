@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Passport Application</title>
+  </head>
+  <body>
+    <div class="main_content">
+      <div class="main_logo">
+        <img src="Ministry_of_External_Affairs_India.svg.png" alt="logo" />
+        <h3>e-Passport kendra</h3>
+      </div>
+      <hr />
+      <div class="bar">
+        <span>1. Service Required: </span>
+        <button class="navbar-button">Fresh Passport</button>
+
+        <button class="navbar-button">Re-issue Pasport</button>
+      </div>
+      <hr />
+      <div class="passport_details">
+        <div class="check_fields">
+          <span class="tag"> 1.4 Type of application: </span>
+
+          <input type="radio" name="normal" id="normal" />
+          <span>Normal</span>
+
+          <input type="radio" name="tatkaal" id="tatkaal" />
+          <span>Tatkaal</span>
+        </div>
+
+        <div class="check_fields">
+          <span class="tag"> 1.5 Types of Passport Booklet </span>
+          <input type="radio" name="36pages" id="36pages" />
+          <span>36 Pages</span>
+          <input type="radio" name="60pages" id="60pages" />
+          <span>60 Pages</span>
+        </div>
+        <div class="check_fields">
+          <span class="tag"> 1.6 Validity Required </span>
+          <input type="radio" name="years" id="year" />
+          <span>10 Years</span>
+          <input type="radio" name="years" id="years" />
+          <span>Upto age 18 </span>
+          <span style="font-weight: lighter">
+            (For Minors between 15 to 18 yesrs)</span
+          >
+        </div>
+      </div>
+
+      <div class="fresh" id="fresh_passport">
+        <section id="personal">
+          <div class="first">
+            <h5>Common Fields and Fresh Issue</h5>
+            <form>
+              <h4>2. Personal Details</h4>
+              <div>
+                <label for="fullname">2.1 Full Name:</label><br />
+                <input type="text" id="fullname" name="fullname" required />
+              </div>
+              <div>
+                <label for="surname">Surname:</label><br />
+                <input type="text" id="surname" name="surname" required />
+              </div>
+
+              <div style="margin-top: 3%">
+                <label for="dob">2.2 Date of Birth:</label><br />
+                <input type="date" id="dob" name="dob" required />
+              </div>
+
+              <div>
+                <label for="placeofbirth">2.3 Place of Birth:</label>
+                <input
+                  type="text"
+                  id="placeofbirth"
+                  name="placeofbirth"
+                  required
+                />
+              </div>
+
+              <div class="check_fields">
+                <span class="tag">
+                  2.4 Are you Known by any other names (aliases)
+                </span>
+                <input type="radio" name="true" id="true" />
+                <span>Yes</span>
+                <input type="radio" name="false" id="false" />
+                <span>No</span>
+              </div>
+
+              <div class="check_fields">
+                <span class="tag"> 2.5 Have you ever changed your name: </span>
+                <input type="radio" name="true" id="yes" />
+                <span>Yes</span>
+                <input type="radio" name="false" id="no" />
+                <span>No</span>
+              </div>
+
+              <div class="check_fields">
+                <span class="tag"> 2.6 Have you ever changed your name: </span>
+                <input type="radio" name="true" />
+                <span>Yes</span>
+                <input type="radio" name="false" />
+                <span>No</span>
+              </div>
+
+              <div class="check_fields">
+                <span class="tag"> 2.7 Gender: </span>
+                <input type="radio" name="male" id="male" />
+                <span>Male</span>
+                <input type="radio" name="female" id="female" />
+                <span>Female</span>
+                <input type="radio" name="trans" id="trans" />
+                <span>Trans</span>
+              </div>
+
+              <div class="check_fields">
+                <span class="tag"> 2.8 Marital Status: </span>
+                <br />
+                <input type="radio" name="marital_status" />
+                <span>Single</span>
+                <input type="radio" name="marital_status" />
+                <span>Married</span>
+                <input type="radio" name="marital_status" />
+                <span>Divorced</span>
+                <input type="radio" name="marital_status" />
+                <span>Widow</span>
+
+                <input type="radio" name="marital_status" />
+                <span>Widower</span>
+              </div>
+
+              <div class="check_fields">
+                <span class="tag"> 2.9 Citizenship of India by: </span>
+                <br />
+                <input type="radio" name="birth" id="birth" />
+                <span>Birth</span>
+                <input type="radio" name="Descent" id="Descent" />
+                <span>Descent</span>
+                <input type="radio" name="Naturalization" id="Naturalization" />
+                <span>Registration/Naturalization</span>
+              </div>
+
+              <div>
+                <label for="pan">2.10 PAN CARD:</label>
+                <input type="text" id="pan" name="pan" required />
+              </div>
+
+              <div>
+                <label for="voter">2.11 Voters CARD:</label>
+                <input type="text" id="voter" name="voter" required />
+              </div>
+
+              <div class="check_fields">
+                <span class="tag"> 2.12 Employment type: </span>
+                <br />
+                <div class="emp">
+                  <div>
+                    <input type="radio" name="emp" />
+                    <span>PSU</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="emp" />
+                    <span>Government</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="emp" />
+                    <span>Statutory Body</span>
+                  </div>
+                  <div style="grid-column: 1 / span 3">
+                    <input type="radio" name="emp" />
+                    <span>Retired Government Servant</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="emp" />
+                    <span>Self employed</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="emp" />
+                    <span>Private</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="emp" />
+                    <span>Homemaker</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="emp" />
+                    <span>Not Employed</span>
+                  </div>
+                  <div style="grid-column: 2 / span 2">
+                    <input type="radio" name="emp" />
+                    <span>Retired-private services</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="emp" />
+                    <span>Student</span>
+                  </div>
+                  <div>
+                    <input type="radio" name="emp" />
+                    <span>Others</span>
+                  </div>
+                  <br />
+                  <div style="grid-column: 1 / span 3">
+                    <input type="radio" name="emp" id="emp" />
+                    <span
+                      >Owners, Partners [&] Directors of companies which are
+                      members of CII, FICCI [&] ASSOCHAM</span
+                    >
+                  </div>
+                </div>
+              </div>
+
+              <div style="grid-column: 1 / span 2; padding: 2%">
+                <label for="gov_emp "
+                  >2.13 If employed in Government/ Statutory Body/ PSU, specify
+                  organization name:</label
+                >
+                <br />
+                <input
+                  type="text"
+                  id="organization"
+                  name="organization"
+                  style="width: 80%"
+                  required
+                />
+              </div>
+
+              <div class="check_fields">
+                <span class="tag">
+                  2.14 Is either of your parent (in case of minor)/ spouse, a
+                  government servant?
+                </span>
+                <br />
+                <input type="radio" name="true" />
+                <span>Yes</span>
+                <input type="radio" name="false" />
+                <span>No</span>
+              </div>
+
+              <div class="check_fields f">
+                <span class="tag"> 2.15 Educational Qualification</span>
+                <div class="rad">
+                  <input type="radio" name="7th" id="7th" />
+                  <span>7th Pass or Less</span>
+                  <input type="radio" name="9th" id="9th" />
+                  <span>Between 8th or 9th Standard</span>
+                  <input type="radio" name="10th" id="10th" />
+                  <span>10th Pass and Above</span>
+                  <input type="radio" name="Graduate" id="graduate" />
+                  <span>Graduate and above</span>
+                </div>
+              </div>
+
+              <div class="check_fields">
+                <span class="tag">
+                  2.16 Are you eligible for Non-ECR category?
+                </span>
+                <br />
+                <input type="radio" name="true" />
+                <span>Yes</span>
+                <input type="radio" name="false" />
+                <span>No</span>
+                <span style="font-weight: lighter">
+                  For details, see Column 2.15, section B of Instruction Booklet
+                </span>
+              </div>
+
+              <div style="grid-column: 1 / span 2; padding: 2%">
+                <label for="mark ">2.17 Visible Distinguishing mark </label>
+                <br />
+                <input
+                  type="text"
+                  id="mark"
+                  name="mark"
+                  style="width: 80%"
+                  required
+                />
+              </div>
+
+              <div>
+                <label for="aadhar">2.18 AADHAR CARD:</label>
+                <input
+                  type="text"
+                  id="aadhar"
+                  name="aadhar"
+                  required
+                  style="width: 80%"
+                />
+              </div>
+              <input type="submit" value="Submit" />
+            </form>
+          </div>
+        </section>
+        <section id="family">
+          <form>
+            <h4>3. Family Details</h4>
+            <div class="text_card">
+              <h5>
+                3.1 Father's Given Name (Given Name means First name followed by
+                Middle name (If any)) (Initials not allowed)
+                
+              </h5>
+
+              <div>
+                <span>Full Name</span><br />
+                <input type="text" name="name" id="name" />
+              </div>
+              <div>
+                <span>Surname</span><br />
+                <input type="text" name="name" />
+              </div>
+            </div>
+
+            <div class="text_card">
+              <h5>
+                3.2 Mother's Given Name (Given Name means First name followed by
+                Middle name (If any)) (Initials to be entered in seperate field)
+              </h5>
+
+              <div>
+                <span>Full Name</span><br />
+                <input type="text" name="name" />
+              </div>
+              <div>
+                <span>Surname</span><br />
+                <input type="text" name="name" />
+              </div>
+            </div>
+
+            <div class="text_card">
+              <h5>
+                3.3 Legal Guardian's Given Name (If applicable) (Initials to be
+                entered in seperate field)
+              </h5>
+
+              <div>
+                <span>Full Name</span><br />
+                <input type="text" name="name" />
+              </div>
+              <div>
+                <span>Surname</span><br />
+                <input type="text" name="name" />
+              </div>
+            </div>
+
+            <div class="text_card">
+              <h5>
+                3.4 Spouse's Given Name (Given Name means First name followed by
+                Middle name (If any)) (Initials to be entered in seperate field)
+              </h5>
+
+              <div>
+                <span>Full Name</span><br />
+                <input type="text" name="name" />
+              </div>
+              <div>
+                <span>Surname</span><br />
+                <input type="text" name="name" />
+              </div>
+            </div>
+            <div class="text_card">
+              <h5>3.5 If applicant is minor, provide following details</h5>
+              <h5>
+                Parent's Passport Details (If passport has been applied for but
+                not received, give File Number)
+              </h5>
+              <div>
+                <span>Father/ Legal Guardian's File/ Passport Number</span
+                ><br />
+                <input type="text" name="name" />
+              </div>
+              <div>
+                <span>Father/ Legal Guardian's Nationality, if not Indian</span
+                ><br />
+                <input type="text" name="name" />
+              </div>
+              <div>
+                <span>Mother/ Legal Guardian's File/ Passport Number</span
+                ><br />
+                <input type="text" name="name" />
+              </div>
+              <div>
+                <span>Mother/ Legal Guardian's Nationality, if not Indian</span
+                ><br />
+                <input type="text" name="name" />
+              </div>
+            </div>
+          </form>
+        </section>
+
+        <section id="residential">
+          <form>
+            <h4>
+              4. Present Residential Address Details (Where applicant presently
+              resides)
+            </h4>
+            <div style="grid-column: 1 / span 2; padding: 2%">
+              <h5>4.1 House No. and Street Name:</h5>
+              <input
+                type="text"
+                name="residential"
+                style="width: 100%"
+                required
+              />
+              <div class="state_card">
+                <span>Village or Town or City</span>
+                <input
+                  type="text"
+                  name="residential"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              <div class="state_card">
+                <span>District</span>
+                <input
+                  type="text"
+                  name="residential"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              <div class="state_card">
+                <span>Police Station</span>
+                <input
+                  type="text"
+                  name="residential"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              <div class="state_card">
+                <span>State/UT</span>
+                <input
+                  type="text"
+                  name="residential"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+
+              <div class="state_card">
+                <span>Pin</span>
+                <input
+                  type="text"
+                  name="residential"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              <div class="state_card">
+                <span>Mobile Number</span>
+                <input
+                  type="text"
+                  name="residential"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              <div class="state_card">
+                <span>Telephone Number</span>
+                <input
+                  type="text"
+                  name="residential"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              <div class="state_card">
+                <span>Email Id</span>
+                <input
+                  type="text"
+                  name="residential"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              <div class="state_card">
+                <span>4.2 Is permanent address same as present address?</span>
+                <div>
+
+                  <input type="radio" name="yes"><span>Yes</span>
+                  <input type="radio" name="yes"><span>No</span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </section>
+        <section id="emergency">
+          <form>
+            <h4>5. Emergeny Contact Details</h4>
+            <div style="grid-column: 1 / span 2; padding: 2%">
+              <h5>Name and Address (Mention address only if different from present residential address):</h5>
+              <input
+                type="text"
+                name="residential"
+                style="width: 100%"
+                required
+              />
+              <div class="state_card" style="margin-top: 2%;">
+                <span>Mobile Number</span>
+                <input
+                  type="text"
+                  name="emergency"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              <div class="state_card">
+                <span>Telephone Number</span>
+                <input
+                  type="text"
+                  name="emergency"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              <div class="state_card">
+                <span>Email Id</span>
+                <input
+                  type="text"
+                  name="emergency"
+                  style="margin-top: 2%"
+                  required
+                />
+              </div>
+              </div>
+          </form>
+        </section>
+        <section id="applicant_details">
+          <form>
+            <h4>6. Previous Passport/ Application Details</h4>
+            
+            <div style="grid-column: 1 / span 2; padding: 2%">
+              <h5>6.1 Details of latest held/ existing/ lost/ damaged Ordinary Passport/ Identity Certificate</h5>
+              <input
+                type="text"
+                name="residential"
+                style="width: 100%"
+                required
+              />
+              </div>
+          </form>
+        </section>
+      </div>
+    </div>
+  </body>
+</html>
